@@ -12,3 +12,23 @@
     }
 
 }
+
+/* =========================
+   REVIEW SLIDER
+========================= */
+
+.review-slide {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .review-slide {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .review-slide {
+        width: 33.333333%;
+    }
+}

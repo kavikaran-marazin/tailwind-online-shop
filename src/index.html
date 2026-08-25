@@ -566,40 +566,288 @@
 
         </section>
 
+
         <!-- REVIEWS SECTION -->
-        <section id="reviews" class="bg-[#f5f5f3] py-24 md:py-32">
 
-            <div class="max-w-4xl mx-auto px-6 text-center">
+        <section id="reviews" class="w-full bg-gray-100 py-12 sm:py-16 overflow-hidden">
 
-                <p class="text-red-600 uppercase tracking-[4px] text-sm">
-                    Customer Stories
-                </p>
+            <div class="max-w-[1500px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
 
-                <div class="text-yellow-500 text-xl mt-8">
-                    ★★★★★
+                <!-- Heading -->
+                <div class="text-center mb-10">
+
+                    <p class="text-red-600 font-semibold text-sm mb-2">
+                        CUSTOMER STORIES
+                    </p>
+
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">
+                        What Our <span class="text-red-600">Clients Say</span>
+                    </h2>
+
+                    <p class="text-gray-500 text-sm sm:text-base max-w-xl mx-auto mt-3">
+                        Discover what our customers think about FBS Fashion Store.
+                    </p>
+
                 </div>
 
-                <blockquote class="text-3xl md:text-5xl
-                            font-black leading-tight mt-6">
-                    "FBS completely changed the way
-                    I think about everyday fashion."
-                </blockquote>
 
-                <div class="mt-8">
+                <!-- =========================
+             REVIEW SLIDER
+        ========================== -->
 
-                    <p class="font-bold">
-                        Sarah Johnson
-                    </p>
+                <div class="relative px-6 sm:px-8">
 
-                    <p class="text-sm text-gray-500">
-                        Fashion Blogger
-                    </p>
+                    <!-- PREVIOUS / BACK BUTTON -->
+                    <button id="prevReview" type="button" aria-label="Previous reviews" class="absolute left-0 top-1/2 -translate-y-1/2 z-50
+                       w-10 h-10 sm:w-11 sm:h-11
+                       rounded-full
+                       bg-red-600 text-white
+                       flex items-center justify-center
+                       shadow-lg
+                       hover:bg-red-700
+                       transition-all duration-300
+                       cursor-pointer">
 
+                        <i class="fa-solid fa-chevron-left"></i>
+
+                    </button>
+
+
+                    <!-- VIEWPORT -->
+                    <div id="reviewViewport" class="overflow-hidden mx-0 sm:mx-2">
+
+                        <!-- TRACK -->
+                        <div id="reviewTrack" class="flex transition-transform duration-500 ease-in-out">
+
+
+                            <!-- ================= CARD 1 ================= -->
+
+                            <div class="review-slide shrink-0 w-full sm:w-1/2 lg:w-1/3 px-2 box-border">
+
+                                <div class="bg-white rounded-2xl shadow-lg p-6 sm:p-8
+                                   min-h-[300px]
+                                   flex flex-col items-center text-center">
+
+                                    <img src="https://i.pravatar.cc/150?img=47"
+                                        class="w-16 h-16 rounded-full object-cover mb-4" alt="Sarah Johnson">
+
+                                    <div class="text-yellow-400 mb-3 text-lg">
+                                        ★★★★★
+                                    </div>
+
+                                    <h3 class="font-bold text-gray-800 text-lg">
+                                        Sarah Johnson
+                                    </h3>
+
+                                    <span class="text-sm text-gray-400 mb-4">
+                                        Fashion Blogger
+                                    </span>
+
+                                    <p class="text-sm sm:text-base text-gray-600 italic leading-6">
+                                        "I've never been so impressed with a boutique's
+                                        collection. The quality is exceptional."
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================= CARD 2 ================= -->
+
+                            <div class="review-slide shrink-0 w-full sm:w-1/2 lg:w-1/3 px-2 box-border">
+
+                                <div class="bg-white rounded-2xl shadow-lg p-6 sm:p-8
+                                   min-h-[300px]
+                                   flex flex-col items-center text-center">
+
+                                    <img src="https://i.pravatar.cc/150?img=32"
+                                        class="w-16 h-16 rounded-full object-cover mb-4" alt="Jessica Miller">
+
+                                    <div class="text-yellow-400 mb-3 text-lg">
+                                        ★★★★★
+                                    </div>
+
+                                    <h3 class="font-bold text-gray-800 text-lg">
+                                        Jessica Miller
+                                    </h3>
+
+                                    <span class="text-sm text-gray-400 mb-4">
+                                        Regular Customer
+                                    </span>
+
+                                    <p class="text-sm sm:text-base text-gray-600 italic leading-6">
+                                        "The personal styling service changed how I shop.
+                                        The team understands my style perfectly."
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================= CARD 3 ================= -->
+
+                            <div class="review-slide shrink-0 w-full sm:w-1/2 lg:w-1/3 px-2 box-border">
+
+                                <div class="bg-white rounded-2xl shadow-lg p-6 sm:p-8
+                                   min-h-[300px]
+                                   flex flex-col items-center text-center">
+
+                                    <img src="https://i.pravatar.cc/150?img=11"
+                                        class="w-16 h-16 rounded-full object-cover mb-4" alt="Michael Chen">
+
+                                    <div class="text-yellow-400 mb-3 text-lg">
+                                        ★★★★★
+                                    </div>
+
+                                    <h3 class="font-bold text-gray-800 text-lg">
+                                        Michael Chen
+                                    </h3>
+
+                                    <span class="text-sm text-gray-400 mb-4">
+                                        Business Professional
+                                    </span>
+
+                                    <p class="text-sm sm:text-base text-gray-600 italic leading-6">
+                                        "FBS delivered exactly what I needed —
+                                        professional, stylish and high-quality pieces."
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================= CARD 4 ================= -->
+
+                            <div class="review-slide shrink-0 w-full sm:w-1/2 lg:w-1/3 px-2 box-border">
+
+                                <div class="bg-white rounded-2xl shadow-lg p-6 sm:p-8
+                                   min-h-[300px]
+                                   flex flex-col items-center text-center">
+
+                                    <img src="https://i.pravatar.cc/150?img=5"
+                                        class="w-16 h-16 rounded-full object-cover mb-4" alt="Emily Davis">
+
+                                    <div class="text-yellow-400 mb-3 text-lg">
+                                        ★★★★★
+                                    </div>
+
+                                    <h3 class="font-bold text-gray-800 text-lg">
+                                        Emily Davis
+                                    </h3>
+
+                                    <span class="text-sm text-gray-400 mb-4">
+                                        Designer
+                                    </span>
+
+                                    <p class="text-sm sm:text-base text-gray-600 italic leading-6">
+                                        "Amazing collection and excellent customer service.
+                                        I will definitely shop here again."
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================= CARD 5 ================= -->
+
+                            <div class="review-slide shrink-0 w-full sm:w-1/2 lg:w-1/3 px-2 box-border">
+
+                                <div class="bg-white rounded-2xl shadow-lg p-6 sm:p-8
+                                   min-h-[300px]
+                                   flex flex-col items-center text-center">
+
+                                    <img src="https://i.pravatar.cc/150?img=12"
+                                        class="w-16 h-16 rounded-full object-cover mb-4" alt="Daniel Wilson">
+
+                                    <div class="text-yellow-400 mb-3 text-lg">
+                                        ★★★★★
+                                    </div>
+
+                                    <h3 class="font-bold text-gray-800 text-lg">
+                                        Daniel Wilson
+                                    </h3>
+
+                                    <span class="text-sm text-gray-400 mb-4">
+                                        Customer
+                                    </span>
+
+                                    <p class="text-sm sm:text-base text-gray-600 italic leading-6">
+                                        "Great quality, beautiful designs and very fast
+                                        delivery."
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================= CARD 6 ================= -->
+
+                            <div class="review-slide shrink-0 w-full sm:w-1/2 lg:w-1/3 px-2 box-border">
+
+                                <div class="bg-white rounded-2xl shadow-lg p-6 sm:p-8
+                                   min-h-[300px]
+                                   flex flex-col items-center text-center">
+
+                                    <img src="https://i.pravatar.cc/150?img=25"
+                                        class="w-16 h-16 rounded-full object-cover mb-4" alt="Olivia Brown">
+
+                                    <div class="text-yellow-400 mb-3 text-lg">
+                                        ★★★★★
+                                    </div>
+
+                                    <h3 class="font-bold text-gray-800 text-lg">
+                                        Olivia Brown
+                                    </h3>
+
+                                    <span class="text-sm text-gray-400 mb-4">
+                                        Fashion Lover
+                                    </span>
+
+                                    <p class="text-sm sm:text-base text-gray-600 italic leading-6">
+                                        "The clothes are beautiful and the shopping
+                                        experience was absolutely amazing."
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NEXT BUTTON -->
+                    <button id="nextReview" type="button" aria-label="Next reviews" class="absolute right-0 top-1/2 -translate-y-1/2 z-50
+                       w-10 h-10 sm:w-11 sm:h-11
+                       rounded-full
+                       bg-red-600 text-white
+                       flex items-center justify-center
+                       shadow-lg
+                       hover:bg-red-700
+                       transition-all duration-300
+                       cursor-pointer">
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+                </div>
+
+
+                <!-- DOTS -->
+                <div id="reviewDots" class="flex justify-center items-center gap-2 mt-8">
                 </div>
 
             </div>
 
         </section>
+
 
         <!-- Newsletter -->
         <section class="bg-red-600 text-white py-20">
@@ -622,7 +870,7 @@
                 <div class="mt-8 flex flex-col sm:flex-row
                     max-w-lg mx-auto gap-2">
 
-                    <input type="email" placeholder="Your email address" class="flex-1 px-5 py-4 rounded-full
+                    <input type="email" placeholder="Your email address" class="bg-white flex-1 px-5 py-4 rounded-full
                        text-black outline-none">
 
                     <button class="px-7 py-4 bg-black text-white
@@ -806,6 +1054,8 @@
             });
 
         });
+
+
 
     </script>
 
