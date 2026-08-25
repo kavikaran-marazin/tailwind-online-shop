@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@layer utilities {
+
+    #navLinks.active {
+        transform: translateX(0);
+    }
+
+    #navOverlay.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+}
